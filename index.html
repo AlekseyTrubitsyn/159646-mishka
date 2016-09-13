@@ -44,28 +44,28 @@
     </section>
     <section class="catalog-items">
       <article class="catalog-item catalog-item--hit">
-        <h2 class="catalog-item__title">Вязаные корзинки</h2>
-        <h3 class="catalog-item__subtitle catalog-item__subtitle-hit">ТОВАР НЕДЕЛИ</h3>
-        <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table>
-          <tbody>
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="catalog-item__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки" title="Вязаные корзинки">
-        <p class="catalog-item__price">Цена:<span class="catalog-item__price--count">990 рублей</span></p>
-        <a class="white-button catalog-item__order-button" href="#">Заказать</a>
+        <a class="catalog-item__link" href="#">
+          <h2 class="catalog-item__title">Вязаные корзинки</h2>
+          <h3 class="catalog-item__subtitle catalog-item__subtitle-hit">ТОВАР НЕДЕЛИ</h3>
+          <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <div class="catalog-item__features">
+            <div class="catalog-item__feature">
+              <div>Цвет:</div>
+              <div>«Тиффани»/серый</div>
+            </div>
+            <div class="catalog-item__feature">
+              <div>Диаметр:</div>
+              <div>25 см</div>
+            </div>
+            <div class="catalog-item__feature">
+              <div>Высота:</div>
+              <div>15 см</div>
+            </div>
+          </div>
+          <img class="catalog-item__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки" title="Вязаные корзинки">
+          <p class="catalog-item__price">Цена:<span class="catalog-item__price--count">990 рублей</span></p>
+          <a class="white-button catalog-item__order-button" href="#">Заказать</a>
+        </a>
       </article>
     </section>
     <section class="features">
@@ -91,30 +91,30 @@
     </section>
     <section class="contacts">
       <h2 class="contacts__title"></h2>
-      <table> <!-- Или флотами лучше?-->
-        <tr>
-          <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург, ул.Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</td>
-        </tr>
-      </table>
+      <div class="contacts__subblock">
+        <div class="contacts__email contacts-item">
+          <div class="contacts-item__left">e-mail:</div>
+          <div class="contacts-item__right">info@mimimishkashop.ru</div>
+        </div>
+        <div class="contacts__email contacts-item">
+          <div class="contacts-item__left">адрес:</div>
+          <div class="contacts-item__right">г. Санкт-Петербург, ул.Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</div>
+        </div>
+      </div>
       <div class="contacts__map contacts__map-interactive" id="map">
         <img class="contacts__image-of-the-map" width="320" height="457" src="http://placehold.it/320x457" alt="Тут будет интерактивная карта! Подпишитесь на обновления!">
       </div>
       <a class="white-button contacts__feedback" href="#">Напишите нам</a>
     </section>
     <footer class="page-footer">
-      <section class="page-footer__socials">
+      <div class="page-footer__socials">
         <a href="#" class="page-footer__social-item socials-item__instagram"><span class="visually-hidden">instagram</span></a>
         <a href="#" class="page-footer__social-item socials-item__facebook"><span class="visually-hidden">facebook</span></a>
         <a href="#" class="page-footer__social-item socials-item__twitter"><span class="visually-hidden">twitter</span></a>
-      </section>
-      <section class="page-footer__academy">
+      </div>
+      <div class="page-footer__academy">
         <a href="https://htmlacademy.ru/" class="page-footer__credits-title">Разработано <img class="page-footer__academy-icon" width="27" height="34" src="http://placehold.it/27x34" alt="www.htmlacademy.ru"></a>
-      </section>
+      </div>
     </footer>
     <!-- ↓↓↓ на будущее :) -->
     <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
