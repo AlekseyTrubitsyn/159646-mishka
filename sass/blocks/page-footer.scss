@@ -1,0 +1,26 @@
+.page-footer {
+  width: $base-width;
+
+  text-align: center;
+
+  background: #f1f1f1;
+}
+
+.page-footer__socials,
+.page-footer__academy {
+  display: block;
+
+  min-height: 80px;
+  padding: 30px;
+
+  vertical-align: middle;
+}
+
+.page-footer__academy span,
+.page-footer__academy img {
+  line-height: 34px;
+
+  display: inline-block;
+
+  vertical-align: top;
+}

@@ -1,0 +1,20 @@
+.top-menu__link {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+
+  display: block;
+
+  padding: 30px;
+
+  color: white;
+  background-color: #63d1bb;
+}
+
+.top-menu__link span {
+  display: block;
+
+  max-width: 120px;
+}
+
+.top-menu__link--toys { background-color: #56c3b2; }

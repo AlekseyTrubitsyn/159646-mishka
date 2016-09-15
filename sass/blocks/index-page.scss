@@ -1,0 +1,40 @@
+.index-page__title-width-image {
+  font-size: 27px;
+  line-height: 30px;
+
+  box-sizing: border-box;
+  width: $base-width;
+  min-height: 283px;
+  padding: 0 $base-x-padding;
+  padding-top: 67px;
+
+  text-align: center;
+
+  background: url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
+}
+
+.index-page__top-menu { width: $base-width; }
+
+.index-page__catalog-items {
+  width: $base-width;
+  padding: 32px;
+}
+
+.index-page__features,
+.index-page__reviews {
+  width: $base-width;
+  padding: 34px $base-x-padding 27px;
+}
+
+.index-page__contacts {
+  width: $base-width;
+  padding: 0 $base-x-padding;
+}
+
+.index-page__features-title {
+  margin-bottom: 15px;
+}
+
+.index-page__reviews-title {
+  margin-bottom: 38px;
+}

@@ -1,1 +1,15 @@
+@import "./variables.scss";
+
+@import "./global/normalize.scss";
+@import "./global/layout.scss";
 @import "./global/fonts.scss";
+
+@import "./blocks/index-page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/main-menu.scss";
+@import "./blocks/top-menu.scss";
+@import "./blocks/catalog-item.scss";
+@import "./blocks/features-list.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";

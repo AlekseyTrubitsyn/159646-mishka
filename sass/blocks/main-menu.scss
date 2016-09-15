@@ -1,0 +1,19 @@
+.main-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  display: none;
+
+  width: $base-width;
+
+  background: white;
+}
+
+.main-menu__link {
+  display: block;
+
+  padding: 30px;
+
+  box-shadow: inset 0 1px 0 #ececec;
+}
