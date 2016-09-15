@@ -15,7 +15,15 @@
   font-weight: 400;
   line-height: 20px;
 
+  margin: 28px 0;
+
   color: #444;
+}
+
+.catalog-item__feature {
+  line-height: 40px;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .catalog-item__price {

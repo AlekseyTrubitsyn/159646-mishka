@@ -22,7 +22,7 @@
           <li class="main-menu__item">
             <!--<a class="main-menu__link" href="#">Поиск по сайту</a>-->
             <form class="main-menu__link page-header__search-form" action="#" method="get">
-              <input type="image" src="" alt="Поиск">
+              <input type="image" src="./img/icon-search.svg" alt="Поиск">
               <input class="page-header__search" type="text" name="page-header__search" placeholder="Поиск по сайту">
             </form>
           </li>
@@ -68,6 +68,20 @@
           <a class="white-button catalog-item__order-button" href="#">Заказать</a>
         </a>
       </article>
+      <section class="hide-that order-popup popup">
+        <h2 class="order-popup__title">Добавить в&nbsp;корзину</h2>
+        <p class="order-popup__text">Выберите размер:</p>
+        <form class="order-popup__form" action="#" method="post">
+          <input class="radio order-popup__size-selector" id="size-selection__S" type="radio" name="size-selection" value="S" checked>
+          <label class="order-popup__size-label" for="size-selection__S">S</label>
+          <input class="radio order-popup__size-selector" id="size-selection__M" type="radio" name="size-selection" value="M">
+          <label class="order-popup__size-label" for="size-selection__M">M</label>
+          <input class="radio order-popup__size-selector" id="size-selection__L" type="radio" name="size-selection" value="L">
+          <label class="order-popup__size-label" for="size-selection__L">L</label>
+          <input class="green-button order-popup__done" type="submit" value="Добавить">
+        </form>
+      </section>
+      <div class="hide-that popup-background"></div>
     </section>
     <section class="index-page__features">
       <h2 class="index-page__features-title">Коротко о нас:</h2>
@@ -85,8 +99,8 @@
       <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
       <p class="reviews__author">Анастасия Красильникова <a href="#" class="reviews__author--link">@misssssiskras</a></p>
       <div class="reviews__paginators">
-        <a href="#" class="reviews__paginator reviews__paginator--left">&larr;</a>
-        <a href="#" class="reviews__paginator reviews__paginator--right">&rarr;</a>
+        <a href="#" class="reviews__paginator reviews__paginator--left"><img src="./img/icon-left-arrow.svg" alt="&larr;"></a>
+        <a href="#" class="reviews__paginator reviews__paginator--right"><img src="./img/icon-right-arrow.svg" alt="&rarr;"></a>
       </div>
       <a href="#" class="white-button reviews__create-new">Написать</a>
     </section>
@@ -102,24 +116,18 @@
           <div class="contacts-item__right">г. Санкт-Петербург, ул.Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</div>
         </div>
       </div>
-      <div class="contacts__map contacts__map-interactive" id="map">
-        <img class="contacts__image-of-the-map" width="320" height="457" src="http://placehold.it/320x457" alt="Тут будет интерактивная карта! Подпишитесь на обновления!">
-      </div>
+      <div class="contacts__map contacts__map-interactive" id="map" width="320" height="457"></div>
       <a class="white-button contacts__feedback" href="#">Напишите нам</a>
-    </section>
+    </section>    
     <footer class="page-footer">
       <div class="page-footer__socials">
         <a href="#" class="page-footer__social-item socials-item__instagram"><span class="visually-hidden">instagram</span></a>
         <a href="#" class="page-footer__social-item socials-item__facebook"><span class="visually-hidden">facebook</span></a>
         <a href="#" class="page-footer__social-item socials-item__twitter"><span class="visually-hidden">twitter</span></a>
       </div>
-      <!--<div class="page-footer__academy">
-        <a href="https://htmlacademy.ru/" class="page-footer__credits-title">Разработано <img class="page-footer__academy-icon" width="27" height="34" src="./img/htmlacademy.svg" alt="www.htmlacademy.ru"></a>
-      </div> -->
       <a href="https://htmlacademy.ru/" class="page-footer__academy"><span>Разработано </span><img class="page-footer__academy-icon" width="27" height="34" src="./img/htmlacademy.svg" alt="www.htmlacademy.ru"></a>
-    </footer>
-    <!-- ↓↓↓ на будущее :) -->
-    <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/interactive-map.js"></script>-->
+    </footer>    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/interactive-map.js"></script>
   </body>
 </html>

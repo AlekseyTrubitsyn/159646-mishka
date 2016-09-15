@@ -28,7 +28,13 @@
 
 .index-page__contacts {
   width: $base-width;
-  padding: 0 $base-x-padding;
+  padding: 51px $base-x-padding 39px;
+}
+
+.index-page__contacts-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .index-page__features-title {

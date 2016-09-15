@@ -1,0 +1,61 @@
+.order-popup {
+  position: fixed;
+  top: 40px;
+  left: 0;
+
+  width: 320px;
+  min-height: 338px;
+  padding: 37px 30px 47px;
+
+  text-align: center;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, .25);
+}
+
+.order-popup__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+
+  margin-bottom: 25px;
+
+  text-transform: uppercase;
+}
+
+.order-popup__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+
+  margin-bottom: 28px;
+
+  color: #444;
+}
+
+.order-popup__size-label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+
+  display: inline-block;
+
+  width: 82px;
+  padding: 20px;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: #444;
+  border: 2px solid rgba(#444, .1);
+}
+
+.order-popup__size-selector:checked + .order-popup__size-label {
+  border: 2px solid #63d1bb;
+}
+
+.order-popup__done {
+  margin-top: 31px;
+
+  cursor: pointer;
+}
