@@ -9,7 +9,7 @@
     <header class="page-header">
       <!--<h1>Мишка каталог товаров</h1>-->
       <div class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишки" title="Мишки">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки">
       </div>
       <nav class="main-menu">
         <ul class="main-menu__items">
@@ -17,12 +17,12 @@
             <a class="main-menu__link" href="#">Каталог товаров</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Вязание на заказ</a>
+            <a class="main-menu__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-menu__item">
             <!--<a class="main-menu__link" href="#">Поиск по сайту</a>-->
             <form class="page-header__search-form" action="#" method="get">
-              <input type="image" src="" alt="Поиск">
+              <input type="image" src="./img/icon-search.svg" alt="Поиск">
               <input class="page-header__search" type="text" name="page-header__search" placeholder="Поиск по сайту">
             </form>
           </li>
@@ -58,19 +58,20 @@
           <p class="catalog-item__price">1 500 руб.</p>
         </a>
       </article>
-      <section class="order-popup popup">
+      <section class="hide-that order-popup popup">
         <h2 class="order-popup__title">Добавить в корзину</h2>
         <p class="order-popup__text">Выберите размер:</p>
         <form class="order-popup__form" action="#" method="post">
-          <input class="order-popup__size-selector" id="size-selection__S" type="radio" name="size-selection" value="S" checked>
+          <input class="radio order-popup__size-selector" id="size-selection__S" type="radio" name="size-selection" value="S" checked>
           <label class="order-popup__size-label" for="size-selection__S">S</label>
-          <input class="order-popup__size-selector" id="size-selection__M" type="radio" name="size-selection" value="M">
+          <input class="radio order-popup__size-selector" id="size-selection__M" type="radio" name="size-selection" value="M">
           <label class="order-popup__size-label" for="size-selection__M">M</label>
-          <input class="order-popup__size-selector" id="size-selection__L" type="radio" name="size-selection" value="L">
+          <input class="radio order-popup__size-selector" id="size-selection__L" type="radio" name="size-selection" value="L">
           <label class="order-popup__size-label" for="size-selection__L">L</label>
           <input class="green-button order-popup__done" type="submit" value="Добавить">
         </form>
       </section>
+      <div class="hide-that popup-background"></div>
     </section>
     <section class="production">
       <h2 class="production__title"></h2>
@@ -84,9 +85,7 @@
         <a href="#" class="page-footer__social-item socials-item__facebook"><span class="visually-hidden">facebook</span></a>
         <a href="#" class="page-footer__social-item socials-item__twitter"><span class="visually-hidden">twitter</span></a>
       </div>
-      <div class="page-footer__academy">
-        <a href="https://htmlacademy.ru/" class="page-footer__credits-title">Разработано <img class="page-footer__academy-icon" width="27" height="34" src="http://placehold.it/27x34" alt="www.htmlacademy.ru"></a>
-      </div>
+      <a href="https://htmlacademy.ru/" class="page-footer__academy"><span>Разработано </span><img class="page-footer__academy-icon" width="27" height="34" src="./img/htmlacademy.svg" alt="www.htmlacademy.ru"></a>
     </footer>
   </body>
 </html>
