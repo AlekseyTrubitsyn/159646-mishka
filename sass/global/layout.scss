@@ -24,6 +24,14 @@ a {
   color: black;
 }
 
+h1 {
+  padding: 75px $base-x-padding;
+
+  text-align: center;
+
+  background: #f1f1f1;
+}
+
 .radio,
 .checkbox {
   display: none;

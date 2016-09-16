@@ -1,0 +1,37 @@
+$production-padding: 34px;
+$production-padding-reverse: -$production-padding;
+
+.production-container {
+  margin: 30px $base-x-padding 58px;
+  padding: 29px $production-padding 33px;
+
+  border: 1px solid #ececec;
+}
+
+.production__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-bottom: 26px;
+  padding-left: 57px;
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 24px;
+
+  margin: 34px 0 29px;
+
+  color: #444;
+}
+
+.production__image {
+  display: block;
+
+  margin: 0 $production-padding-reverse;
+}
+
+.production__order {
+  width: auto;
+}
