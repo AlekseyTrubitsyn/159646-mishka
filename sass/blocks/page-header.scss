@@ -1,10 +1,15 @@
 .page-header {
-  width: 320px;
+  width: $base-width;
 
   text-align: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
-.page-header:hover .main-menu { display: block; }
+.page-header:hover .main-menu {
+  display: block;
+}
 
-.page-header__logo { padding: 22px; }
-
+.page-header__logo {
+  padding: 22px;
+}
