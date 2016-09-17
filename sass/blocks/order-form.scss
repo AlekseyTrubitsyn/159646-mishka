@@ -1,0 +1,67 @@
+.order-form {
+  padding: 0 $base-x-padding 55px;
+}
+
+.order-form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+
+  display: block;
+
+  margin: 11px 0;
+  padding: 12px 0;
+  padding-left: 64px;
+}
+
+.order-form__section-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+
+  margin-top: 36px;
+
+  text-transform: uppercase;
+
+  color: #63d1bb;
+}
+
+.order-form__full-name-title {
+  margin-bottom: 37px;
+}
+
+.order-form__full-name-label {
+  display: block;
+
+  margin-top: 24px;
+}
+
+.order-form__line-input {
+  font-size: 17px;
+  /*line-height: 18px;*/
+  line-height: 30px;
+
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  color: #444;
+  box-shadow: inset 0 -2px 0 black;
+}
+
+.order-form__additionals-input {
+  margin-top: 31px;
+  margin-bottom: 18px;
+  padding: 18px 17px;
+
+  border: 2px solid #444;
+  background-color: white;
+}
+
+.order-form__text {
+  font-size: 13px; /* В макете 14, но не влезает в одну строку */
+  font-weight: 400;
+
+  margin: 0 -2px 22px;
+
+  color: #444;
+}

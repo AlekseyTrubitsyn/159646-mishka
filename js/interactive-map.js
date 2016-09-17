@@ -1,5 +1,4 @@
-/* Интерактивная карта на будущее */
-/*ymaps.ready(init);
+ymaps.ready(init);
 var myMap;
 function init() {
     myMap = new ymaps.Map('map', {
@@ -15,11 +14,11 @@ function init() {
     balloonContent: ''
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/map-pin.svg',
+    iconImageHref: './img/icon-map-pin.svg',
     iconImageSize: [67, 100],
     iconImageOffset: [-34, -100]
   });
 
   myMap.geoObjects.add(myPlacemark);
 }
-*/
+

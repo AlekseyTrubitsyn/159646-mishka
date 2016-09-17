@@ -1,0 +1,19 @@
+$reverse-base-x-padding: -$base-x-padding;
+
+.contacts__subblock {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: #444;
+}
+
+.contacts__map-interactive {
+  margin: 40px $reverse-base-x-padding;
+}
+
+.contacts__map-interactive {
+  width: $base-width;
+  height: 457px;
+}
+
