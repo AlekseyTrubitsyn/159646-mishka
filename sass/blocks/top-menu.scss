@@ -1,3 +1,7 @@
+.top-menu {
+  @include clearfix;
+}
+
 .top-menu__link {
   font-size: 19px;
   font-weight: 700;
@@ -9,6 +13,8 @@
 
   color: white;
   background-color: #63d1bb;
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .top-menu__link span {
@@ -17,4 +23,23 @@
   max-width: 120px;
 }
 
-.top-menu__link--toys { background-color: #56c3b2; }
+.top-menu__link--toys {
+  background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .top-menu {
+    padding: 0 30px;
+  }
+
+  .top-menu__item {
+    float: left;
+  }
+
+  .top-menu__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 334px;
+  }
+}

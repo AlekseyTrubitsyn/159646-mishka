@@ -100,4 +100,4 @@ input {
   background-color: white;
 }
 
-.container { width: $base-width; }
+.container { @include container(); }

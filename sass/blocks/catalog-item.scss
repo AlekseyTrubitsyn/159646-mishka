@@ -64,3 +64,47 @@
 .catalog-item__image {
   margin: 0 -28px 31px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item,
+  .catalog-item__titles {
+    @include clearfix;
+  }
+
+  .catalog-item__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    float: left;
+  }
+
+  .catalog-item__subtitle-hit {
+    font-size: 17px;
+    line-height: 16px;
+
+    float: right;
+
+    width: 70px;
+  }
+
+  .catalog-item__info,
+  .catalog-item__price--hit,
+  .catalog-item__order-button {
+    float: left;
+
+    width: 282px;
+  }
+
+  .catalog-item__image--hit {
+    float: right;
+
+    margin-left: 44px;
+    width: 333px;
+    height: auto;
+  }
+
+  .catalog-item__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

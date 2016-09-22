@@ -1,0 +1,21 @@
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media (min-width: $descktop-width) {
+    width: 1150px;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+}

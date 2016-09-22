@@ -12,3 +12,23 @@
 
   color: black;
 }
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    @include clearfix;
+  }
+
+  .index-page__features-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 29px;
+  }
+
+  .features-list__item {
+    float: left;
+
+    width: 50%;
+    padding-right: 99px;
+  }
+}

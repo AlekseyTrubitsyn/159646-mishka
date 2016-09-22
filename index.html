@@ -9,26 +9,29 @@
     <header class="page-header">
       <div class="container">
         <!--<h1>Мишка</h1>-->
-        <div class="page-header__logo">
+        <!--<div class="page-header__logo">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки">
-        </div>
+        </div>-->
         <nav class="main-menu">
-          <ul class="main-menu__items">
-            <li class="main-menu__item">
+          <a class="main-menu__item page-header__logo" href="#"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки"></a>
+          <ul class="main-menu__submenu main-menu__submenu--bottom">
+            <li class="main-menu__sub-item">
               <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-menu__item">
+            </li>  
+            <li class="main-menu__sub-item">
               <a class="main-menu__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-menu__item">
+          </ul>
+          <ul class="main-menu__submenu main-menu__submenu--top"> 
+            <li class="main-menu__sub-item">
               <!--<a class="main-menu__link" href="#">Поиск по сайту</a>-->
               <form class="main-menu__link page-header__search-form" action="#" method="get">
-                <input type="image" src="./img/icon-search.svg" alt="Поиск">
+                <input class="main-menu__search-button" type="image" src="./img/icon-search.svg" alt="Поиск">
                 <input class="page-header__search" type="text" name="page-header__search" placeholder="Поиск по сайту">
               </form>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Корзина: пока пуста</a>
+              <a class="main-menu__link main-menu__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
@@ -51,21 +54,25 @@
       <div class="container">
         <article class="catalog-item catalog-item--hit">
           <a class="catalog-item__link" href="#">
-            <h2 class="catalog-item__title">Вязаные корзинки</h2>
-            <h3 class="catalog-item__subtitle catalog-item__subtitle-hit">ТОВАР НЕДЕЛИ</h3>
-            <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <div class="catalog-item__features">
-              <div class="catalog-item__feature">
-                <div>Цвет:</div>
-                <div>«Тиффани»/серый</div>
-              </div>
-              <div class="catalog-item__feature">
-                <div>Диаметр:</div>
-                <div>25 см</div>
-              </div>
-              <div class="catalog-item__feature">
-                <div>Высота:</div>
-                <div>15 см</div>
+            <div class="catalog-item__titles">
+              <h2 class="catalog-item__title">Вязаные корзинки</h2>
+              <h3 class="catalog-item__subtitle catalog-item__subtitle-hit">ТОВАР НЕДЕЛИ</h3>              
+            </div>
+            <div class="catalog-item__info">
+              <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <div class="catalog-item__features">
+                <div class="catalog-item__feature">
+                  <div>Цвет:</div>
+                  <div>«Тиффани»/серый</div>
+                </div>
+                <div class="catalog-item__feature">
+                  <div>Диаметр:</div>
+                  <div>25 см</div>
+                </div>
+                <div class="catalog-item__feature">
+                  <div>Высота:</div>
+                  <div>15 см</div>
+                </div>
               </div>
             </div>
             <img class="catalog-item__image--hit" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" title="Вязаные корзинки">
