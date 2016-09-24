@@ -2,7 +2,16 @@
   font-size: 13px;
   line-height: 24px;
 
-  padding: 30px $base-x-padding;
+  padding: 30px 30px;
 
   color: #444;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__subtitle {
+    font-size: 17px;
+    line-height: 30px;
+
+    padding-top: 70px;
+  }
 }

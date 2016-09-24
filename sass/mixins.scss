@@ -19,3 +19,7 @@
     content: '';
   }
 }
+
+@mixin outlined() {
+  border: 1px solid #fb5650;
+}

@@ -34,7 +34,8 @@
   .main-menu {
     flex-direction: row;
 
-    margin-bottom: -80px;
+    /*margin-bottom: -76px;*/
+    margin-bottom: -60px;
 
     flex-wrap: wrap;
   }
@@ -60,7 +61,8 @@
   }
 
   .main-menu__submenu--bottom .main-menu__link {
-    padding: 25px 18px;
+    /*padding: 25px 18px;*/
+    padding: 18px;
   }
 
   .main-menu__search-button {
