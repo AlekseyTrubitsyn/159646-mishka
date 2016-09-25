@@ -84,3 +84,10 @@
     float: right;
   }
 }
+
+@media (min-width: $descktop-width) {
+  .reviews__paginator {
+    border: none;
+    width: 88px;
+  }
+}

@@ -50,6 +50,13 @@
     background: #f9f9f9 url('../img/hero-tablet@1x.jpg') no-repeat 50% -20px;
   }
 
+  .index-page__features-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 29px;
+  }
+
   .index-page__features .container,
   .index-page__reviews  .container {
     padding: 34px 50px 27px;
@@ -76,6 +83,45 @@
   .index-page__contacts-title {
     font-size: 43px;
     line-height: 50px;
+
     margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .index-page__title-width-image h1 {
+    padding: 0 270px;
+  }
+
+  .index-page__features .container {
+    width: 800px;
+  }
+
+  .index-page__features-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .index-page__reviews .container {
+    padding-left: 225px;
+  }
+
+  .index-page__reviews-title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 46px;
+  }
+
+  .index-page__contacts .container {
+    padding-left: 224px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+ .index-page__contacts-title {
+    align-self: flex-start;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

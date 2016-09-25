@@ -25,13 +25,43 @@
 
 @media (min-width: $tablet-width) {
   .page-footer .container {
-    padding-left: 260px;
+    /*padding-left: 260px;*/
+    display: flex;
+
+    justify-content: stretch;
     @include clearfix;
   }
 
+  /*.page-footer__logo,
   .page-footer__socials,
   .page-footer__academy {
     width: 244px;
     float: left;
+  }*/
+}
+
+@media (min-width: $descktop-width) {
+  .page-footer__logo {
+    padding-top: 51px;
+  }
+
+  .page-footer__socials {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 57px 30px;
+
+    justify-content: space-between;
+  }
+
+  .page-footer__social-item {
+    display: block;
+
+    height: 29px;
+    margin: 0 20px;
+  }
+
+  .page-footer__academy {
+    padding: 58px 0;
   }
 }

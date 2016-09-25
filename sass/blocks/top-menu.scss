@@ -43,3 +43,13 @@
     width: 334px;
   }
 }
+
+@media (min-width: $descktop-width) {
+  .top-menu__item {
+    width: 50%;
+  }
+
+  .top-menu__link {
+    width: 100%;
+  }
+}
