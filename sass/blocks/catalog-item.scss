@@ -161,6 +161,11 @@
 }
 
 @media (min-width: $descktop-width) {
+  .catalog-item {
+    display: flex;
+    padding: 0;
+  }
+
   .catalog-item__image--hit {
     width: 525px;
   }
@@ -193,4 +198,31 @@
   .catalog-item__order-button {
     margin-left: 175px;
   }
+
+  .catalog-item__link--order {
+    flex-direction: column;
+  }
+
+  .catalog-item__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog-item__details {
+    width: 316px;
+    padding-right: 32px;
+    flex-grow: 1;
+  }
+
+  .catalog-item__text {
+    margin-bottom: 45px;
+  }
+
+  .catalog-item__price--order {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 23px 0;
+  }
 }
+
