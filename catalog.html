@@ -8,10 +8,6 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <!--<h1>Мишка</h1>-->
-        <!--<div class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки">
-        </div>-->
         <nav class="main-menu">
           <a class="main-menu__item page-header__logo" href="#"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки"></a>
           <ul class="main-menu__submenu main-menu__submenu--bottom">
@@ -24,17 +20,24 @@
           </ul>
           <ul class="main-menu__submenu main-menu__submenu--top"> 
             <li class="main-menu__sub-item">
-              <!--<a class="main-menu__link" href="#">Поиск по сайту</a>-->
-              <form class="main-menu__link page-header__search-form" action="#" method="get">
-                <input class="main-menu__search-button" type="image" src="./img/icon-search.svg" alt="Поиск">
-                <input class="page-header__search" type="text" name="page-header__search" placeholder="Поиск по сайту">
-              </form>
+              <a class="main-menu__link main-menu__search" href="#"><span class="mobile-hidden">Поиск по сайту</span></a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link main-menu__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
+        <ul class="main-menu__submenu main-menu__submenu--super-bottom">
+          <li class="main-menu__sub-item">
+            <a class="main-menu__link" href="catalog.html">Новые поступления</a>
+          </li>
+          <li class="main-menu__sub-item">
+            <a class="main-menu__link" href="form.html">Распродажа</a>
+          </li>
+          <li  class="main-menu__sub-item">
+            <p class="main-menu__free-shipping">Бесплатная доставка по России</p>
+          </li>
+        </ul>
       </div>
     </header>
     <div class="catalog-page__title">

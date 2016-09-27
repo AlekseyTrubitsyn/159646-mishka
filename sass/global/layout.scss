@@ -76,7 +76,7 @@ input {
   text-transform: uppercase;
 
   color: white;
-  background-color: #63d1bb;  
+  background-color: #63d1bb;
 }
 
 .white-button {
@@ -98,4 +98,26 @@ input {
   background-color: white;
 }
 
-.container { @include container(); }
+.container {
+  @include container();
+}
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-hidden {
+    @include visuallyhidden();
+  }
+}

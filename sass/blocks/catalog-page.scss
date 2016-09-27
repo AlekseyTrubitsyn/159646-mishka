@@ -9,6 +9,7 @@
 
 .catalog-page__catalog-section .container {
   display: flex;
+  flex-direction: column;
   /*padding-top: 146px;*/
 
   justify-content: space-around;
@@ -16,7 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .catalog-page__catalog-section .container {
-    flex-direction: column;
     padding-top: 79px;
   }
 }

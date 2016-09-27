@@ -68,18 +68,28 @@ $production-padding-reverse: -$production-padding;
     margin-bottom: 36px;
   }
 }
-@media (min-width: $tablet-width) {
+
+@media (min-width: $descktop-width) {
   .production__image {
+    margin: 0;
+
+    border: none;
+
     align-self: flex-start;
   }
 
   .production-container {
+    max-height: 455px;
+    padding-bottom: 0;
+    padding-left: 0;
+
     align-items: flex-end;
+    flex-wrap: wrap;
   }
 
   .production__title {
-    padding-left: 0;
     padding-top: 53px;
+    padding-left: 0;
   }
 
   .production__title,
