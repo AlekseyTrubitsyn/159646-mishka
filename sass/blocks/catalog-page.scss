@@ -9,8 +9,21 @@
 
 .catalog-page__catalog-section .container {
   display: flex;
-
-  padding-top: 146px;
+  /*padding-top: 146px;*/
 
   justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__catalog-section .container {
+    flex-direction: column;
+    padding-top: 79px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+ .catalog-page__catalog-section .container {
+    flex-direction: row;
+    padding-top: 111px;
+  } 
 }
