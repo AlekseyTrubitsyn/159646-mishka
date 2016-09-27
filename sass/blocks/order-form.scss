@@ -1,3 +1,9 @@
+$desctop-padding: 111px;
+
+.order-form * {
+  @include outlined();
+}
+
 .order-form {
   padding: 0 $base-x-padding 55px;
 }
@@ -68,24 +74,39 @@
   color: #444;
 }
 
-.order-form__section-title,
-.order-form__inputs,
-.order-form__label {
-  @include outlined();
-}
-
 @media (min-width: $tablet-width) {
-  .form-page__subtitle {
-    padding-bottom: 10px;
+  .order-form {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .order-form__group {
     display: flex;
 
     padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
   }
 
-  .order-form__group--names {
+  .order-form .container {
+    display: flex;
+
+    padding-right: 51px;
+    padding-left: 51px;
+  }
+
+  .order-form__group:nth-child(2n) {
+    background: #f1f1f1;
+  }
+
+  .order-form__group:last-child {
+    background: white;
+  }
+
+  .order-form__group--names .container {
+    padding-right: 47px;
+
     flex-wrap: wrap;
   }
 
@@ -104,7 +125,6 @@
 
   .order-form__inputs {
     display: flex;
-    /*width: 100%;*/
 
     width: 500px;
 
@@ -127,11 +147,13 @@
   }
 
   .order-form__line-input {
-    line-height: 50px;
+    line-height: 22px;
 
     width: 100%;
     margin-bottom: 24px;
-    padding: 0;
+    padding: 14px 17px;
+
+    background: none;
   }
 
   .order-form__name-line {
@@ -168,6 +190,8 @@
 
   .order-form__inputs {
     width: 760px;
+
+    flex-shrink: 0;
   }
 
   .order-form__label--checkbox {
@@ -175,21 +199,12 @@
   }
 
   .order-form__group {
-    padding-right: 112px;
+    padding-top: 62px;
     padding-bottom: 62px;
-    padding-left: 60px;
   }
 
   .order-form__group:first-child .order-form__inputs {
     flex-direction: column;
-  }
-
-  .order-form__group:nth-child(2n) {
-    background: #f1f1f1;
-  }
-
-  .order-form__group:last-child {
-    background: white;
   }
 
   .order-form__line-input {
@@ -200,8 +215,14 @@
     background: none;
   }
 
-  .order-form__group--bottom {
+  /*.order-form__group--bottom {
     padding-right: 102px;
     padding-left: 177px;
+  }*/
+
+
+  .order-form__group .container {
+    padding-right: 111px;
+    padding-left: 111px;
   }
 }

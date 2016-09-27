@@ -1,3 +1,7 @@
+.form-page__title {
+  background: #f1f1f1;
+}
+
 .form-page__subtitle {
   font-size: 13px;
   line-height: 24px;
@@ -13,5 +17,15 @@
     line-height: 30px;
 
     padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .form-page__subtitle {
+    padding-right: 250px;
+    padding-left: 225px;
   }
 }
