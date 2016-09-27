@@ -160,3 +160,48 @@
     padding: 15px;
   }
 }
+
+@media (min-width: $descktop-width) {
+  .order-form__section-title {
+    width: 115px;
+  }
+
+  .order-form__inputs {
+    width: 760px;
+  }
+
+  .order-form__label--checkbox {
+    width: 33%;
+  }
+
+  .order-form__group {
+    padding-right: 112px;
+    padding-bottom: 62px;
+    padding-left: 60px;
+  }
+
+  .order-form__group:first-child .order-form__inputs {
+    flex-direction: column;
+  }
+
+  .order-form__group:nth-child(2n) {
+    background: #f1f1f1;
+  }
+
+  .order-form__group:last-child {
+    background: white;
+  }
+
+  .order-form__line-input {
+    line-height: 18px;
+
+    padding: 17px;
+
+    background: none;
+  }
+
+  .order-form__group--bottom {
+    padding-right: 102px;
+    padding-left: 177px;
+  }
+}
