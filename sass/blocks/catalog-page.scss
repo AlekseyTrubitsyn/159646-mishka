@@ -1,0 +1,29 @@
+.catalog-page__title {
+  font-size: 53px;
+  line-height: 57px;
+
+  padding-bottom: 99px;
+
+  background: #f1f1f1;
+}
+
+.catalog-page__catalog-section .container {
+  display: flex;
+  flex-direction: column;
+  /*padding-top: 146px;*/
+
+  justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__catalog-section .container {
+    padding-top: 79px;
+  }
+}
+
+@media (min-width: $descktop-width) {
+ .catalog-page__catalog-section .container {
+    flex-direction: row;
+    padding-top: 111px;
+  } 
+}

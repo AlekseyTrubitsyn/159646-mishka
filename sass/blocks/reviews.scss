@@ -54,3 +54,40 @@
 .reviews__create-new {
   margin-top: 38px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__create-new {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+
+    width: 175px;
+    margin-bottom: 45px;
+    padding: 16px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+
+    margin-bottom: 51px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+
+    float: left;
+
+    width: 241px;
+  }
+
+  .reviews__paginators {
+    float: right;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .reviews__paginator {
+    border: none;
+    width: 88px;
+  }
+}

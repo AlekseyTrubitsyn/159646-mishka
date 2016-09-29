@@ -1,6 +1,4 @@
 .page-footer {
-  width: $base-width;
-
   text-align: center;
 
   background: #f1f1f1;
@@ -23,4 +21,37 @@
   display: inline-block;
 
   vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer .container {
+    display: flex;
+
+    justify-content: stretch;
+  }
+
+  .page-footer__logo {
+    padding: 50px;
+  }
+
+  .page-footer__socials {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 57px 30px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__social-item {
+    display: block;
+
+    height: 29px;
+    margin: 0 20px;
+  }
+
+  .page-footer__academy {
+    padding: 56px 50px;
+  }
 }

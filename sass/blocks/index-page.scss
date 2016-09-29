@@ -4,21 +4,21 @@
 
   box-sizing: border-box;
   min-height: 283px;
-  padding: 0 $base-x-padding;
+  padding: 0 30px;
   padding-top: 67px;
 
   text-align: center;
 
-  background: url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
+  background: #f9f9f9 url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
 }
 
 .index-page__features .container,
 .index-page__reviews  .container {
-  padding: 34px $base-x-padding 27px;
+  padding: 34px 30px 27px;
 }
 
 .index-page__contacts  .container {
-  padding: 51px $base-x-padding 39px;
+  padding: 51px 30px 39px;
 }
 
 .index-page__contacts-title {
@@ -33,4 +33,95 @@
 
 .index-page__reviews-title {
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .index-page__top-menu {
+    background: #f9f9f9;
+  }
+
+  .index-page__title-width-image {
+    font-size: 43px;
+    line-height: 50px;
+
+    min-height: 626px;
+    padding-top: 150px;
+
+    background: #f9f9f9 url('../img/hero-tablet@1x.jpg') no-repeat 50% -20px;
+  }
+
+  .index-page__features-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 29px;
+  }
+
+  .index-page__features .container,
+  .index-page__reviews  .container {
+    padding: 34px 50px 27px;
+  }
+
+  .index-page__reviews .container {
+    position: relative;
+
+    @include clearfix;
+  }
+
+  .index-page__reviews-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-top: 40px;
+    padding-right: 190px;
+  }
+
+  .index-page__contacts .container {
+    padding: 51px 50px 39px;
+  }
+
+  .index-page__contacts-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .index-page__title-width-image h1 {
+    padding: 0 270px;
+  }
+
+  .index-page__features .container {
+    width: 800px;
+  }
+
+  .index-page__features-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .index-page__reviews .container {
+    padding-left: 225px;
+  }
+
+  .index-page__reviews-title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 46px;
+  }
+
+  .index-page__contacts .container {
+    padding-left: 224px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+ .index-page__contacts-title {
+    align-self: flex-start;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

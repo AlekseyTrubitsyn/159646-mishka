@@ -17,3 +17,41 @@ $reverse-base-x-padding: -$base-x-padding;
   height: 457px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__subblock {
+    font-size: 17px;
+  }
+
+  .contacts__feedback {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .contacts__subblock {
+    width: 300px;
+    margin-bottom: 54px;
+
+    align-self: flex-start;
+  }
+
+  .contacts__map-interactive {
+    order: 1;
+    align-self: flex-end;
+  }
+
+  .contacts__feedback {
+    margin: 0;
+  }
+
+  .contacts-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .contacts-item__left {
+    width: 60px;
+    margin-right: 18px;
+    flex-shrink: 0;
+  }
+}

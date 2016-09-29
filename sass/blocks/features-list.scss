@@ -12,3 +12,24 @@
 
   color: black;
 }
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    @include clearfix;
+  }
+
+  .features-list__item {
+    float: left;
+
+    width: 50%;
+    padding-right: 99px;
+  }
+}
+
+@media (min-width: $descktop-width) {
+  .features-list__item {
+    font-size: 20px;
+    width: 325px;
+    padding-right: 60px;
+  }
+}

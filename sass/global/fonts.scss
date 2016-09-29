@@ -41,6 +41,15 @@ footer {
   line-height: 16px;
 }
 
+@media (min-width: $tablet-width) {
+  h1 {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 93px;
+    margin: 0 -20px;
+  }
+}
+
 @font-face {
   font-family: OpenSans;
   font-weight: normal;

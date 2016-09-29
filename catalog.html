@@ -8,56 +8,71 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <div class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки">
-        </div>
         <nav class="main-menu">
-          <ul class="main-menu__items">
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-menu__item">
+          <a class="main-menu__item page-header__logo" href="#"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки"></a>
+          <ul class="main-menu__submenu main-menu__submenu--bottom">
+            <li class="main-menu__sub-item">
+              <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+            </li>  
+            <li class="main-menu__sub-item">
               <a class="main-menu__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-menu__item">
-              <!--<a class="main-menu__link" href="#">Поиск по сайту</a>-->
-              <form class="page-header__search-form" action="#" method="get">
-                <input type="image" src="./img/icon-search.svg" alt="Поиск">
-                <input class="page-header__search" type="text" name="page-header__search" placeholder="Поиск по сайту">
-              </form>
+          </ul>
+          <ul class="main-menu__submenu main-menu__submenu--top"> 
+            <li class="main-menu__sub-item">
+              <a class="main-menu__link main-menu__search" href="#"><span class="mobile-hidden">Поиск по сайту</span></a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Корзина: пока пуста</a>
+              <a class="main-menu__link main-menu__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
+        <ul class="main-menu__submenu main-menu__submenu--super-bottom">
+          <li class="main-menu__sub-item">
+            <a class="main-menu__link" href="catalog.html">Новые поступления</a>
+          </li>
+          <li class="main-menu__sub-item">
+            <a class="main-menu__link" href="form.html">Распродажа</a>
+          </li>
+          <li  class="main-menu__sub-item">
+            <p class="main-menu__free-shipping">Бесплатная доставка по России</p>
+          </li>
+        </ul>
       </div>
     </header>
-    <h1 class="container catalog-page__title">Каталог товаров</h1>
+    <div class="catalog-page__title">
+      <h1 class="container">Каталог товаров</h1>      
+    </div>
     <section class="catalog-page__catalog-section">
       <div class="container">
         <article class="catalog-item">
           <a class="catalog-item__link--order" href="#">
             <img class="catalog-item__image" src="./img/photo-1-mobile@1x.jpg" width="260" height="auto" alt="Зайчик-попрыгайчик">
-            <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
-            <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
-            <p class="catalog-item__price catalog-item__price--order">1 200 руб.</p>
+            <div class="catalog-item__details">
+              <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+              <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+              <p class="catalog-item__price catalog-item__price--order">1 200 руб.</p>              
+            </div>
           </a>
         </article>
         <article class="catalog-item">
           <a class="catalog-item__link--order" href="#">
             <img class="catalog-item__image" src="./img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="auto">
-            <h3 class="catalog-item__title">Корзинка для белья</h3>
-            <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
-            <p class="catalog-item__price catalog-item__price--order">690 руб.</p>
+            <div class="catalog-item__details">
+              <h3 class="catalog-item__title">Корзинка для белья</h3>
+              <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+              <p class="catalog-item__price catalog-item__price--order">690 руб.</p>
+            </div>
           </a>
         </article>
         <article class="catalog-item">
           <a class="catalog-item__link--order" href="#">
             <img class="catalog-item__image" src="./img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="auto">
-            <h3 class="catalog-item__title">Большая корзинка для&nbsp;игрушек</h3>
-            <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
-            <p class="catalog-item__price catalog-item__price--order">1 500 руб.</p>
+            <div class="catalog-item__details">
+              <h3 class="catalog-item__title">Большая корзинка для&nbsp;игрушек</h3>
+              <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog-item__price catalog-item__price--order">1 500 руб.</p>
+            </div>
           </a>
         </article>
         <section class="hide-that order-popup popup">
@@ -88,6 +103,7 @@
     </section>
     <footer class="page-footer">
       <div class="container">
+        <a class="page-footer__logo" href="#"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишки" title="Мишки"></a>
         <div class="page-footer__socials">
           <a href="#" class="page-footer__social-item socials-item__instagram"><span class="visually-hidden">instagram</span></a>
           <a href="#" class="page-footer__social-item socials-item__facebook"><span class="visually-hidden">facebook</span></a>
