@@ -22,7 +22,7 @@
             <li class="main-menu__sub-item">
               <a class="main-menu__link main-menu__search" href="#"><span class="mobile-hidden">Поиск по сайту</span></a>
             </li>
-            <li class="main-menu__item">
+            <li class="main-menu__sub-item">
               <a class="main-menu__link main-menu__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -58,7 +58,7 @@
     <section class="index-page__catalog-items">
       <div class="container">
         <article class="catalog-item catalog-item--hit">
-          <a class="catalog-item__link" href="#">
+          <a class="catalog-item__link--hit" href="#">
             <div class="catalog-item__titles">
               <h2 class="catalog-item__title catalog-item__title--hit">Вязаные корзинки</h2>
               <h3 class="catalog-item__subtitle catalog-item__subtitle-hit">ТОВАР НЕДЕЛИ</h3>              
@@ -81,9 +81,9 @@
               </div>
             </div>
             <img class="catalog-item__image--hit" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" title="Вязаные корзинки">
-            <p class="catalog-item__price catalog-item__price--hit">Цена: <span class="catalog-item__price--count">990 рублей</span></p>
-            <a class="white-button catalog-item__order-button" href="#">Заказать</a>
+            <p class="catalog-item__price catalog-item__price--hit">Цена: <span class="catalog-item__price--count">990 руб.</span></p>
           </a>
+          <a class="white-button catalog-item__order-button" href="#">Заказать</a>
         </article>
         <section class="hide-that order-popup popup">
           <h2 class="order-popup__title">Добавить в&nbsp;корзину</h2>
@@ -107,7 +107,7 @@
         <ul class="features-list">
           <li class="features-list__item features-list__item--eco">Экологически чистые материалы</li>
           <li class="features-list__item features-list__item--cheap">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
-          <li class="features-list__item features-list__item--likes">Увеличивает лайки&nbsp;на фотографиях</li>
+          <li class="features-list__item features-list__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
           <li class="features-list__item features-list__item--handmade">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
           <li class="features-list__item features-list__item--patriotism">Поддержка отечественного производителя</li>
           <li class="features-list__item features-list__item--gift-package">Поставляется в подарочной&nbsp;упаковке</li>
@@ -139,7 +139,8 @@
             <div class="contacts-item__right">г. Санкт-Петербург, ул.Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</div>
           </div>
         </div>
-        <div class="contacts__map contacts__map-interactive" id="map" width="320" height="457"></div>
+        <div class="contacts__map contacts__map-interactive" id="map"></div>
+        <!--<div class="contacts__map contacts__map-interactive" id="map" width="320" height="457"></div>-->
         <a class="white-button contacts__feedback" href="#">Напишите нам</a>
       </div>
     </section>    

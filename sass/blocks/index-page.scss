@@ -89,12 +89,21 @@
 }
 
 @media (min-width: $descktop-width) {
+  .index-page__title-width-image {
+    padding-top: 152px;
+  }
+
   .index-page__title-width-image h1 {
-    padding: 0 270px;
+    font-size: 53px;
+    line-height: 57px;
+
+    padding: 0 268px;
   }
 
   .index-page__features .container {
     width: 800px;
+    padding-top: 83px;
+    padding-bottom: 55px;
   }
 
   .index-page__features-title {
@@ -103,25 +112,44 @@
   }
 
   .index-page__reviews .container {
+    padding-bottom: 128px;
     padding-left: 225px;
   }
 
   .index-page__reviews-title {
     font-size: 53px;
     line-height: 57px;
+
+    margin-top: 37px;
     margin-bottom: 46px;
   }
 
   .index-page__contacts .container {
-    padding-left: 224px;
+    position: relative;
+
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+
+    padding-top: 142px;
+    padding-right: 575px;
+    padding-bottom: 105px;
+    padding-left: 224px;
+
+    border-top: 23px solid #ccc;
+
+    flex-wrap: wrap;
   }
 
- .index-page__contacts-title {
-    align-self: flex-start;
+  .index-page__contacts-title {
     font-size: 53px;
     line-height: 57px;
+
+    margin-bottom: 47px;
+
+    align-self: flex-start;
+  }
+
+  .contacts__feedback {
+    width: 230px;
   }
 }

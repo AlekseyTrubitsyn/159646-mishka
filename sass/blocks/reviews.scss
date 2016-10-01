@@ -45,10 +45,8 @@
 
 .reviews__paginator img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%,-50%);
+  top: 16px;
+  left: 20px;
 }
 
 .reviews__create-new {
@@ -87,7 +85,17 @@
 
 @media (min-width: $descktop-width) {
   .reviews__paginator {
-    border: none;
     width: 88px;
+
+    border: none;
+  }
+
+  .reviews__text {
+    margin-bottom: 40px;
+    padding-right: 80px;
+  }
+
+  .reviews__author {
+    line-height: 26px;
   }
 }

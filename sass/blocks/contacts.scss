@@ -30,28 +30,36 @@ $reverse-base-x-padding: -$base-x-padding;
 @media (min-width: $descktop-width) {
   .contacts__subblock {
     width: 300px;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
 
     align-self: flex-start;
   }
 
   .contacts__map-interactive {
-    order: 1;
-    align-self: flex-end;
+    position: absolute;
+    top: 71px;
+    right: 50px;
+
+    width: 525px;
+    height: 457px;
+    margin: 0;
   }
 
   .contacts__feedback {
     margin: 0;
+    padding: 16px;
   }
 
   .contacts-item {
     display: flex;
+
     margin-bottom: 30px;
   }
 
   .contacts-item__left {
     width: 60px;
     margin-right: 18px;
+
     flex-shrink: 0;
   }
 }
