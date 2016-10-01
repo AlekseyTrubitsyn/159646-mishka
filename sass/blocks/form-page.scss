@@ -24,7 +24,12 @@
 }
 
 @media (min-width: $descktop-width) {
+  .form-page__title {
+    padding-bottom: 27px;
+  }
+
   .form-page__subtitle {
+    padding-top: 122px;
     padding-right: 250px;
     padding-left: 225px;
   }
