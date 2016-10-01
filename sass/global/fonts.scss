@@ -50,6 +50,13 @@ footer {
   }
 }
 
+@media (min-width: $descktop-width) {
+  h1 {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 @font-face {
   font-family: OpenSans;
   font-weight: normal;

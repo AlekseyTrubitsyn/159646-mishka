@@ -70,16 +70,10 @@ $production-padding-reverse: -$production-padding;
 }
 
 @media (min-width: $descktop-width) {
-  .production__image {
-    margin: 0;
-
-    border: none;
-
-    align-self: flex-start;
-  }
-
   .production-container {
     max-height: 455px;
+    margin-top: 58px;
+    margin-bottom: 105px;
     padding-bottom: 0;
     padding-left: 0;
 
@@ -87,14 +81,34 @@ $production-padding-reverse: -$production-padding;
     flex-wrap: wrap;
   }
 
-  .production__title {
-    padding-top: 53px;
-    padding-left: 0;
+  .production__image {
+    width: 682px;
+    margin: 0;
+
+    border: none;
+
+    align-self: flex-start;
   }
 
   .production__title,
-  .production__order,
   .production__text {
+    width: 255px;
+  }
+
+  .production__title {
+    margin-bottom: 16px;
+    padding-top: 55px;
+    padding-right: 50px;
+    padding-left: 0;
+  }
+
+  .production__text {
+    margin-bottom: 46px;
+  }
+
+  .production__order {
     width: 230px;
+    margin-right: 24px;
+    padding: 15px;
   }
 }
