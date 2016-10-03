@@ -3,8 +3,23 @@
   flex-direction: column;
 }
 
-.main-menu__submenu {
+/*.main-menu__submenu {
   display: none;
+}*/
+
+.main-menu__submenu {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  left: 0;
+
+  display: none;
+
+  background: white;
+}
+
+.main-menu__submenu--top {
+  top: 245px;
 }
 
 .main-menu:hover .main-menu__submenu {
@@ -18,6 +33,7 @@
   display: block;
 
   padding: 30px;
+  padding-left: 76px;
 
   text-align: left;
 
@@ -49,11 +65,18 @@
   }
 
   .main-menu__submenu--bottom .main-menu__link {
+    font-size: 15px;
+    line-height: 24px;
+
     padding: 20px 18px;
   }
 
   .main-menu__submenu {
+    position: unset;
+
     display: flex;
+
+    background: none;
   }
 
   .main-menu__submenu--bottom {
