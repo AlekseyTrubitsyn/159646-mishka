@@ -67,7 +67,7 @@
   .reviews__text {
     font-size: 17px;
 
-    margin-bottom: 51px;
+    margin-bottom: 60px;
   }
 
   .reviews__author {
@@ -81,14 +81,16 @@
   .reviews__paginators {
     float: right;
   }
-}
 
-@media (min-width: $descktop-width) {
   .reviews__paginator {
     width: 88px;
 
     border: none;
   }
+}
+
+@media (min-width: $descktop-width) {
+
 
   .reviews__text {
     margin-bottom: 40px;
