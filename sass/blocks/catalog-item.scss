@@ -34,6 +34,10 @@
   line-height: 24px;
 }
 
+.catalog-item__text {
+  line-height: 37px;
+}
+
 .catalog-item__price--hit {
   font-size: 17px;
 
@@ -45,8 +49,8 @@
 }
 
 .catalog-item__price--order {
-  margin-top: 27px;
-  padding: 28px 0;
+  margin-top: 15px;
+  padding: 21px 0 27px;
 
   border-top: 1px solid #ececec;
 }
@@ -68,7 +72,7 @@
 }
 
 .catalog-item__image {
-  margin: 0 -28px 31px;
+  margin: 0 -28px 20px;
 }
 
 .catalog-item__feature div {
@@ -106,8 +110,13 @@
     @include clearfix;
   }
 
+  .catalog-item {
+    padding-bottom: 22px;
+  }
+
   .catalog-item--hit {
     padding-top: 46px;
+    padding-bottom: 0;
   }
 
   .catalog-item__description {
@@ -123,7 +132,7 @@
 
   .catalog-item__image {
     width: 334px;
-    height: auto;
+    height: 334px;
     margin: 0;
 
     flex-shrink: 0;
