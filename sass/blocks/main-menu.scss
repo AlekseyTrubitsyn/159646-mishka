@@ -84,6 +84,16 @@
   }
 
   .main-menu__submenu--super-bottom {
+    font-size: 15px;
+
+    position: absolute;
+    top: 113px;
+    right: 50px;
+
+    flex-direction: row-reverse;
+  }
+
+  .main-menu__submenu--super-bottom .main-menu__link {
     display: none;
   }
 
@@ -172,11 +182,18 @@
   }
 
   .main-menu__submenu--super-bottom {
+    position: unset;
+
     display: flex;
+    flex-direction: row;
 
     margin-bottom: -60px;
 
     justify-content: stretch;
+  }
+
+  .main-menu__submenu--super-bottom .main-menu__link {
+    display: block;
   }
 
   .main-menu__submenu--super-bottom .main-menu__sub-item:last-child {

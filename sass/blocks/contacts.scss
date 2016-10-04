@@ -37,14 +37,23 @@ $reverse-base-x-padding: -$base-x-padding;
     display: flex;
 
     width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contacts-item__left {
+    margin-right: 24px;
+  }
+
+  .contacts__email {
+    margin-right: 34px;
   }
 
   .contacts__subblock {
     font-size: 17px;
 
     display: flex;
-
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
 
   .contacts__feedback {
