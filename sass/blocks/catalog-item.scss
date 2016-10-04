@@ -3,7 +3,7 @@
   font-weight: 700;
   line-height: 16px;
 
-  margin: 8px 0 30px;
+  margin: 7px 0 25px;
 
   text-transform: uppercase;
 
@@ -15,7 +15,7 @@
   font-weight: 400;
   line-height: 20px;
 
-  margin: 28px 0;
+  margin: 12px 0 28px;
 
   color: #444;
 }
@@ -37,7 +37,7 @@
 .catalog-item__price--hit {
   font-size: 17px;
 
-  padding: 28px;
+  padding: 22px 28px 26px;
 
   text-align: center;
 
@@ -63,6 +63,10 @@
   padding: 30px $base-x-padding 0;
 }
 
+.catalog-item__link {
+  display: block;
+}
+
 .catalog-item__image {
   margin: 0 -28px 31px;
 }
@@ -73,6 +77,27 @@
 
 .catalog-item__link--order * {
   @include outlined();
+}
+
+.catalog-item--hit {
+  padding: 27px 30px 0;
+}
+
+.catalog-item__link--hit {
+  display: block;
+}
+
+.catalog-item__title--hit {
+  font-size: 25px;
+}
+
+.catalog-item__description {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.catalog-item__order-button {
+  padding: 15px 20px;
 }
 
 @media (min-width: $tablet-width) {

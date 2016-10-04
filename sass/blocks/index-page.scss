@@ -4,8 +4,7 @@
 
   box-sizing: border-box;
   min-height: 283px;
-  padding: 0 30px;
-  padding-top: 67px;
+  padding: 0;
 
   text-align: center;
 
@@ -17,8 +16,16 @@
   padding: 34px 30px 27px;
 }
 
+.index-page__features .container {
+  padding-top: 71px;
+}
+
+.index-page__reviews .container {
+  padding-top: 5px;
+}
+
 .index-page__contacts  .container {
-  padding: 51px 30px 39px;
+  padding: 59px 30px 39px;
 }
 
 .index-page__contacts-title {

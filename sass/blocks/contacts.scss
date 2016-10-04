@@ -8,13 +8,28 @@ $reverse-base-x-padding: -$base-x-padding;
   color: #444;
 }
 
+.contacts-item__left {
+  margin-right: 30px;
+}
+
+.contacts-item {
+  display: flex;
+
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+
 .contacts__map-interactive {
-  margin: 40px $reverse-base-x-padding;
+  margin: 37px -30px 39px;
 }
 
 .contacts__map-interactive {
   width: $base-width;
   height: 457px;
+}
+
+.contacts__feedback {
+  padding: 15px 20px;
 }
 
 @media (min-width: $tablet-width) {
