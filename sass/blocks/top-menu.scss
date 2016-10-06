@@ -9,12 +9,10 @@
 
   display: block;
 
-  padding: 30px;
+  padding: 23px 28px 32px;
 
   color: white;
   background-color: #63d1bb;
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .top-menu__link span {
@@ -41,6 +39,8 @@
     line-height: 30px;
 
     width: 334px;
+    padding-top: 25px;
+    padding-left: 35px;
   }
 }
 
@@ -51,5 +51,6 @@
 
   .top-menu__link {
     width: 100%;
+    padding: 27px 38px 30px;
   }
 }

@@ -3,7 +3,7 @@
   font-weight: 700;
   line-height: 16px;
 
-  margin: 8px 0 30px;
+  margin: 7px 0 25px;
 
   text-transform: uppercase;
 
@@ -15,7 +15,7 @@
   font-weight: 400;
   line-height: 20px;
 
-  margin: 28px 0;
+  margin: 12px 0 28px;
 
   color: #444;
 }
@@ -34,10 +34,14 @@
   line-height: 24px;
 }
 
+.catalog-item__text {
+  line-height: 37px;
+}
+
 .catalog-item__price--hit {
   font-size: 17px;
 
-  padding: 28px;
+  padding: 22px 28px 26px;
 
   text-align: center;
 
@@ -45,8 +49,8 @@
 }
 
 .catalog-item__price--order {
-  margin-top: 27px;
-  padding: 28px 0;
+  margin-top: 15px;
+  padding: 21px 0 27px;
 
   border-top: 1px solid #ececec;
 }
@@ -63,8 +67,12 @@
   padding: 30px $base-x-padding 0;
 }
 
+.catalog-item__link {
+  display: block;
+}
+
 .catalog-item__image {
-  margin: 0 -28px 31px;
+  margin: 0 -28px 20px;
 }
 
 .catalog-item__feature div {
@@ -75,42 +83,40 @@
   @include outlined();
 }
 
+.catalog-item--hit {
+  padding: 27px 30px 0;
+}
+
+.catalog-item__link--hit {
+  display: block;
+}
+
+.catalog-item__title--hit {
+  font-size: 25px;
+}
+
+.catalog-item__description {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.catalog-item__order-button {
+  padding: 15px 20px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-item,
   .catalog-item__titles {
     @include clearfix;
   }
 
-  .catalog-item__title--hit {
-    font-size: 43px;
-    line-height: 50px;
-
-    float: left;
+  .catalog-item {
+    padding-bottom: 22px;
   }
 
-  .catalog-item__subtitle-hit {
-    font-size: 17px;
-    line-height: 16px;
-
-    float: right;
-
-    width: 70px;
-  }
-
-  .catalog-item__info,
-  .catalog-item__price--hit,
-  .catalog-item__order-button {
-    float: left;
-
-    width: 282px;
-  }
-
-  .catalog-item__image--hit {
-    float: right;
-
-    width: 333px;
-    height: auto;
-    margin-left: 44px;
+  .catalog-item--hit {
+    padding-top: 46px;
+    padding-bottom: 0;
   }
 
   .catalog-item__description {
@@ -126,7 +132,7 @@
 
   .catalog-item__image {
     width: 334px;
-    height: auto;
+    height: 334px;
     margin: 0;
 
     flex-shrink: 0;
@@ -158,21 +164,96 @@
   .catalog-item__price--order {
     margin-top: auto;
   }
+
+  .catalog-item__title--hit {
+    font-size: 43px;
+    line-height: 50px;
+
+    float: left;
+  }
+
+  .catalog-item__titles--hit {
+    margin-bottom: 30px;
+  }
+
+  .catalog-item__subtitle-hit {
+    font-size: 17px;
+    line-height: 16px;
+
+    float: right;
+
+    width: 125px;
+    padding-top: 4px;
+
+    text-align: center;
+  }
+
+  .catalog-item__info,
+  .catalog-item__price--hit,
+  .catalog-item__order-button {
+    float: left;
+
+    width: 282px;
+  }
+
+  .catalog-item__image--hit {
+    float: right;
+
+    width: 333px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 44px;
+  }
+
+  .catalog-item__features {
+    margin: 35px 0 28px;
+  }
+
+  .catalog-item__price--hit {
+    font-size: 20px;
+
+    padding-top: 26px;
+    padding-left: 40px;
+  }
+
+  .catalog-item__order-button {
+    width: 290px;
+    margin-top: 7px;
+    padding: 16px;
+  }
 }
 
 @media (min-width: $descktop-width) {
   .catalog-item {
     display: flex;
+
     padding: 0;
   }
 
   .catalog-item--hit {
-    display: block;
-    padding: 30px 30px 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 126px 30px 73px;
+
+    flex-wrap: nowrap;
+  }
+
+  .catalog-item__link--hit {
+    display: flex;
+    flex-direction: column;
   }
 
   .catalog-item__image--hit {
+    position: absolute;
+    z-index: -1;
+    top: 73px;
+    right: 30px;
+
     width: 525px;
+    margin: 0;
   }
 
   .catalog-item__titles {
@@ -188,20 +269,44 @@
 
   .catalog-item__subtitle-hit {
     margin-top: 15px;
-    margin-right: 58px;
+    margin-right: 54px;
     margin-left: 47px;
 
     text-align: center;
   }
 
   .catalog-item__info {
-    margin-top: 52px;
+    margin-top: 27px;
+  }
+
+  .catalog-item--hit .catalog-item__features {
+    margin-top: 51px;
+    margin-bottom: 0;
+  }
+
+  .catalog-item--hit .catalog-item__feature {
+    line-height: 34px;
+
+    padding-top: 0;
+    padding-bottom: 5px;
   }
 
   .catalog-item__info,
   .catalog-item__price--hit,
   .catalog-item__order-button {
+    width: 293px;
     margin-left: 175px;
+  }
+
+  .catalog-item__order-button {
+    margin-top: 7px;
+    padding: 16px;
+  }
+
+  .catalog-item__price--hit {
+    font-size: 20px;
+
+    margin-top: 79px;
   }
 
   .catalog-item__link--order {
@@ -215,19 +320,21 @@
 
   .catalog-item__details {
     width: 316px;
+    padding-top: 22px;
     padding-right: 32px;
+
     flex-grow: 1;
   }
 
   .catalog-item__text {
-    margin-bottom: 45px;
+    margin-bottom: 13px;
   }
 
   .catalog-item__price--order {
     font-size: 17px;
-    line-height: 24px;
     font-weight: 700;
+    line-height: 24px;
+
     padding: 23px 0;
   }
 }
-
