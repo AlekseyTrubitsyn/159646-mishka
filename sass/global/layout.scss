@@ -116,6 +116,10 @@ input {
   border: 0;
 }
 
+source {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .mobile-hidden {
     @include visuallyhidden();

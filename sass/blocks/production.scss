@@ -26,14 +26,14 @@ $production-padding-reverse: -$production-padding;
   color: #444;
 }
 
-.production__image {
+.production__picture {
   display: block;
 
   margin: 0 $production-padding-reverse;
 }
 
 .production__order {
-  width: auto; 
+  width: auto;
   padding: 16px;
 }
 
@@ -51,14 +51,17 @@ $production-padding-reverse: -$production-padding;
     margin-top: 39px;
   }
 
+  .production__picture {
+    margin: -1px -35px 0;
+
+    order: -1;
+  }
+
   .production__image {
     width: 668px;
     height: 455px;
-    margin: -1px -35px 0;
 
     border-bottom: 1px solid #ececec;
-
-    order: -1;
   }
 
   .production__text {
@@ -82,13 +85,16 @@ $production-padding-reverse: -$production-padding;
     flex-wrap: wrap;
   }
 
-  .production__image {
-    width: 682px;
+  .production__picture {
     margin: 0;
 
     border: none;
 
     align-self: flex-start;
+  }
+
+  .production__image {
+    width: 682px;
   }
 
   .production__title,

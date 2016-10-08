@@ -114,7 +114,11 @@
       <div class="container">
         <div class="production-container">
           <h2 class="production__title">Процесс производства</h2>
-          <img class="production__image" src="./img/video-mobile@1x.jpg" alt="Наше производство" width="260" height="150">
+          <picture class="production__picture">
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img class="production__image" src="./img/video-mobile@1x.jpg" srcset="./img/video-tablet@2x.jpg 2x" width="260" height="150" alt="Наше производство">
+          </picture>
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="white-button production__order" href="#">Сделать заказ</a>
         </div>
