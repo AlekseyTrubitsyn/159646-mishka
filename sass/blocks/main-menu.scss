@@ -47,7 +47,7 @@
 }
 
 .main-menu__search {
-  background: url("../img/sprite.svg#icon-search(viewBox(0, 0, 32, 32))") no-repeat;
+  background: url('../img/sprite.svg#icon-search(viewBox(0, 0, 32, 32))') no-repeat;
   background-size: 32px 96px;
 }
 
@@ -143,6 +143,10 @@
     /*flex-wrap: nowrap;*/
   }
 
+  .main-menu__submenu--bottom .main-menu__link {
+    font-size: 17px;
+  }
+
   .main-menu:hover .main-menu__submenu--super-bottom {
     display: flex;
   }
@@ -154,8 +158,9 @@
   .main-menu__item.page-header__logo {
     width: auto;
     padding-top: 9px;
+    padding-left: 41px;
 
-    text-align: center;
+    text-align: left;
 
     flex-grow: 2;
     order: 1;

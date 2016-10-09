@@ -256,17 +256,20 @@
     display: flex;
   }
 
+  .catalog-item__titles--hit {
+    margin-bottom: 5px;
+  }
+
   .catalog-item__title--hit {
     font-size: 53px;
     line-height: 57px;
 
     order: 1;
   }
-
   .catalog-item__subtitle-hit {
-    margin-top: 15px;
-    margin-right: 54px;
-    margin-left: 47px;
+    margin-top: 11px;
+    margin-right: 26px;
+    margin-left: 19px;
 
     text-align: center;
   }
